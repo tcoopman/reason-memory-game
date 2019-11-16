@@ -1,0 +1,12 @@
+(executable
+    (name App)
+    (package App)
+		 (flags
+			(:standard -open Base ))
+    (preprocess (pps brisk-reconciler.ppx ppx_deriving.eq ppx_deriving.show))
+    (public_name App)
+    (libraries
+        bigarray
+        Revery
+        base
+            ))
